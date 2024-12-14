@@ -4,28 +4,26 @@ import matplotlib.pyplot as plt
 import cartopy.crs as ccrs
 import cartopy.feature as cfeature
 
-# Load the shapefile
-shapefile = gpd.read_file("Main/PCON_JULY_2024_UK_BSC.shp")
+# shapefile = gpd.read_file("Main/PCON_JULY_2024_UK_BSC.shp")
 csvfile = pd.read_csv("Main/foi20190080data.csv")
 
-print(shapefile.info())
+# print(shapefile.info())
 print(csvfile.info())
 
-merged_data = shapefile.merge(csvfile, left_on='PCON24NM', right_on='PCON11NM')
+# merged_data = shapefile.merge(csvfile, left_on='PCON24NM', right_on='PCON11NM')
 
-print(merged_data.info())
+# print(merged_data.info())
 
-fig, ax = plt.subplots(figsize=(10, 10))
+# fig, ax = plt.subplots(figsize=(10, 10))
 
-shapefile.plot(ax=ax, color='lightgrey', edgecolor='black')
+# shapefile.plot(ax=ax, color='lightgrey', edgecolor='black')
 
-merged_data.plot(column='Mid-2018', ax=ax, cmap='OrRd')
+# merged_data.plot(column='Mid-2018', ax=ax, cmap='OrRd')
 
-# Customize the plot
-plt.title('Map with Data from CSV')
-plt.xlabel('Longitude')
-plt.ylabel('Latitude')
-plt.show()
+# plt.title('Map with Data from CSV')
+# plt.xlabel('Longitude')
+# plt.ylabel('Latitude')
+# plt.show()
 
 # shapefile.plot()
 

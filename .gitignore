@@ -11,3 +11,11 @@ Main/PCON_JULY_2024_UK_BSC.prj
 Main/PCON_JULY_2024_UK_BSC.shp
 Main/PCON_JULY_2024_UK_BSC.shp.xml
 Main/PCON_JULY_2024_UK_BSC.shx
+cartogrammable/tests/PCON_JULY_2024_UK_BUC.cpg
+cartogrammable/tests/PCON_JULY_2024_UK_BUC.dbf
+cartogrammable/tests/PCON_JULY_2024_UK_BUC.prj
+cartogrammable/tests/PCON_JULY_2024_UK_BUC.shp
+cartogrammable/tests/PCON_JULY_2024_UK_BUC.shp.xml
+cartogrammable/tests/PCON_JULY_2024_UK_BUC.shx
+/cartogrammable/cartogrammable/__pycache__
+/cartogrammable/tests/__pycache__
