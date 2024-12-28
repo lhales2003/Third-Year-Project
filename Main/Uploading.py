@@ -16,7 +16,7 @@ merged_data = shapefile.merge(csvfile, left_on='PCON24NM', right_on='PCON11NM')
 
 fig, ax = plt.subplots(figsize=(10, 10))
 
-# shapefile.plot(ax=ax, color='lightgrey', edgecolor='black')
+shapefile.plot(ax=ax, color='lightgrey', edgecolor='black')
 
 merged_data.plot(column='Mid-2018', ax=ax, cmap='OrRd')
 

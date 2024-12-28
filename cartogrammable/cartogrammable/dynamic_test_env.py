@@ -11,6 +11,8 @@ print(test_shapefile.info())
 print(test_csv_file.head())
 print(test_csv_file.info())
 
+print(test_shapefile["geometry"][0])
+
 print(type(test_shapefile)) 
 print(type(test_csv_file))
 print(isinstance(test_shapefile, gpd.geodataframe.GeoDataFrame))
@@ -23,5 +25,7 @@ test_csv_file["PCON24NM"] = test_csv_file["PCON11NM"]
 test_csv_file["Mid-2018"] = test_csv_file["Mid-2018"].str.replace(",", "").astype("int64")
 cg = CartogramGenerator(test_shapefile, test_csv_file, "Mid-2018")
 
-cg.plot_heatmap()
+# cg.plot_heatmap()
+cg.cartogram_type("test")
+cg.plot_cartogram()
 plt.show()
