@@ -9,6 +9,8 @@ import matplotlib.pyplot as plt
 class CartogramGenerator:
     """The class of the object the user will interact with in order to create Cartograms
     """
+    # ? Potential for this to be done by having two methods of instantiation, one providing the column in common and one not
+    # ? If this were to be done, some of the functions would need to be adapted to take in the extra parameter and produce different outcomes based on whether this has been passed through
     def __init__(self, geodataframe, dataframe, statistic_column):
         """Initialises Cartogram object, using GeoDataFrame and DataFrame provided.
 
